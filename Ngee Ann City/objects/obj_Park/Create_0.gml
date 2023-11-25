@@ -1,6 +1,3 @@
 global.points += 1;
 
 
-
-
-
