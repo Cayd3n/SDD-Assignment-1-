@@ -1,6 +1,4 @@
-global.money = 16
+global.coins = 16
 global.points = 0
-global.
-
 
 
