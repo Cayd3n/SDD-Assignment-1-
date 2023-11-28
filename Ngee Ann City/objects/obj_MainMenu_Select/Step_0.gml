@@ -7,7 +7,7 @@ if ((keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"))) ){
 	selection --;
 	if (selection < 0)
 	{
-		selection = 2;
+		selection = 3;
 	}
 	options[selection].sprite_index = spr_Button_Selected;
 }
