@@ -11,6 +11,13 @@ if(x != mouse_xAxis){
 	if(x > mouse_xAxis){
 		x -= 10; //Decrease by 1 for the x axis
 	}
+	//Prevent object from moving outside the grid or map
+	if x < 0 {
+	    x = 0; // Prevent object from moving beyond the left boundary
+	}
+	if x > room_width {
+	    x = room_width; // Prevent object from moving beyond the right boundary
+	}
 }
 
 if(y != mouse_yAxis){
@@ -22,6 +29,16 @@ if(y != mouse_yAxis){
 	if(y > mouse_yAxis){
 		y -= 10; //Decrease by 1 for the y axis
 	}
+	//Prevent object from moving outside the grid or map
+	if y < 0 {
+		y = 0; // Prevent object from moving beyond the top boundary
+	}
+	if y > room_height {
+	    y = room_height; // Prevent object from moving beyond the bottom boundary
+	}
 }
+
+
+
 
 

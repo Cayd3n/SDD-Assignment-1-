@@ -32,6 +32,7 @@
     {"name":"spr_CommercialBlk","order":1,"path":"sprites/spr_CommercialBlk/spr_CommercialBlk.yy",},
     {"name":"obj_Industrial","order":4,"path":"objects/obj_Industrial/obj_Industrial.yy",},
     {"name":"spr_Park","order":4,"path":"sprites/spr_Park/spr_Park.yy",},
+    {"name":"obj_Highlight","order":7,"path":"objects/obj_Highlight/obj_Highlight.yy",},
     {"name":"obj_Commerical","order":1,"path":"objects/obj_Commerical/obj_Commerical.yy",},
     {"name":"rm_Highscore","order":2,"path":"rooms/rm_Highscore/rm_Highscore.yy",},
     {"name":"obj_Road","order":3,"path":"objects/obj_Road/obj_Road.yy",},

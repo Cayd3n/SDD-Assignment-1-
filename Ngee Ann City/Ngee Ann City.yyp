@@ -53,6 +53,7 @@
     {"id":{"name":"spr_CommercialBlk","path":"sprites/spr_CommercialBlk/spr_CommercialBlk.yy",},},
     {"id":{"name":"obj_Industrial","path":"objects/obj_Industrial/obj_Industrial.yy",},},
     {"id":{"name":"spr_Park","path":"sprites/spr_Park/spr_Park.yy",},},
+    {"id":{"name":"obj_Highlight","path":"objects/obj_Highlight/obj_Highlight.yy",},},
     {"id":{"name":"obj_Commerical","path":"objects/obj_Commerical/obj_Commerical.yy",},},
     {"id":{"name":"rm_Highscore","path":"rooms/rm_Highscore/rm_Highscore.yy",},},
     {"id":{"name":"obj_Road","path":"objects/obj_Road/obj_Road.yy",},},
