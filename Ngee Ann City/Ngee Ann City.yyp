@@ -56,6 +56,7 @@
     {"id":{"name":"obj_Highlight","path":"objects/obj_Highlight/obj_Highlight.yy",},},
     {"id":{"name":"obj_Commerical","path":"objects/obj_Commerical/obj_Commerical.yy",},},
     {"id":{"name":"rm_Highscore","path":"rooms/rm_Highscore/rm_Highscore.yy",},},
+    {"id":{"name":"scr_gameGrid","path":"scripts/scr_gameGrid/scr_gameGrid.yy",},},
     {"id":{"name":"obj_Road","path":"objects/obj_Road/obj_Road.yy",},},
     {"id":{"name":"spr_Button_Idle","path":"sprites/spr_Button_Idle/spr_Button_Idle.yy",},},
     {"id":{"name":"spr_Road","path":"sprites/spr_Road/spr_Road.yy",},},

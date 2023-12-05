@@ -1,9 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+scr_gameGrid();
 
-var gridWidth = 1280; // Replace with actual grid width
-var gridHeight = 1280; // Replace with actual grid height
+
+
+/*
+var gridWidth = 32; // Replace with actual grid width
+var gridHeight = 32; // Replace with actual grid height
 
 for (var i = 0; i < gridWidth; i++) {
     for (var j = 0; j < gridHeight; j++) {
@@ -13,5 +17,6 @@ for (var i = 0; i < gridWidth; i++) {
         }
     }
 }
+*/
 
 
