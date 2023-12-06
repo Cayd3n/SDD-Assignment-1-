@@ -1,3 +1,0 @@
-global.points += 1;
-
-
