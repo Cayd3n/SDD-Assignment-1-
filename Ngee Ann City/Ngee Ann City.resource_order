@@ -19,7 +19,6 @@
   ],
   "ResourceOrderSettings": [
     {"name":"obj_Button_load","order":2,"path":"objects/obj_Button_load/obj_Button_load.yy",},
-    {"name":"rm_Game","order":1,"path":"rooms/rm_Game/rm_Game.yy",},
     {"name":"obj_MainMenu_Select","order":5,"path":"objects/obj_MainMenu_Select/obj_MainMenu_Select.yy",},
     {"name":"spr_Title","order":7,"path":"sprites/spr_Title/spr_Title.yy",},
     {"name":"obj_Button_play","order":1,"path":"objects/obj_Button_play/obj_Button_play.yy",},

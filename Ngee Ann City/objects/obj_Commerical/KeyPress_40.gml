@@ -1,24 +1,29 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-// each grid cell is 20 units in size
-var gridSize = 20;
+// Replace with the actual width of each grid square
+var gridSquareWidth = 64;
+// Replace with the actual height of each grid square
+var gridSquareHeight = 96; 
 
-y = y + 50
+if (keyboard_check(vk_down)) {
+	
+	// Check for collision with other objects below it
+    if (!place_meeting(x, y + gridSquareHeight, obj_Road) && !place_meeting(x, y + gridSquareHeight, obj_Park) && !place_meeting(x, y + gridSquareHeight, obj_Commerical) && !place_meeting(x, y + gridSquareHeight, obj_Residential) && !place_meeting(x, y + gridSquareHeight, obj_Industrial)) {
+        // Move the object down by increasing its y-coordinate by the grid square height
+		 y += gridSquareHeight;
+    
+	}
 
-//Prevent object from moving outside the grid or map
-if x < 0 {
-    x = 0; 
-}
+    // Adjust the position to align with the grid
+    y = clamp(y, 0, room_height - gridSquareHeight);
 
-if x > (room_width - gridSize) {
-    x = room_width - gridSize; //
-}
+    // Ensure the object stays within the horizontal boundaries
+    if (x < 0) {
+        x = 0; // Prevent object from moving beyond the left boundary
+    }
 
-if y < 0 {
-    y = 0; // Prevent object from moving beyond the top boundary
-}
-
-if y > (room_height - gridSize) {
-    y = room_height - gridSize; 
+    if (x > (room_width - gridSquareWidth)) {
+        x = room_width - gridSquareWidth;
+    }
 }
