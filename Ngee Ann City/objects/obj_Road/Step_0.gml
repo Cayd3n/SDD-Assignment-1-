@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+/*
 
 if(x != mouse_xAxis){
 	//If object is on the left side of mouse position, move right
@@ -46,7 +46,7 @@ if(y != mouse_yAxis){
 	}
 }
 
-
+*/
 
 
 

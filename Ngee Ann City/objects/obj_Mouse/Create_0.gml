@@ -47,12 +47,12 @@ stateFree = function()
 {
 	mouseOver();
 	//Start to drag item if slot is not empty
-	if(mouse_check_button(mb_left)) && (slotHover != -1) && (inventoryHover.inventory[slotHover] != -1)
+	if(mouse_check_button(mb_left)) && (slotHover != -1) && (gridHover.mapgrid[slotHover] != -1)
 	{
 		//Enter drag state
 		state = stateDrag;
-		itemDrag = inventoryHover.inventory[slotHover];
-		inventoryDrag = inventoryHover;
+		itemDrag = gridHover.mapgrid[slotHover];
+		gridDrag = gridHover;
 		slotDrag = slotHover;
 	}
 }
@@ -63,13 +63,13 @@ stateDrag = function()
 	if(!mouse_check_button(mb_left)) 
 	{
 		//Swap with slot if hovering
-		if(slotHover != -1) InventorySwap(inventoryDrag, slotDrag, inventoryHover, slotHover)
+		if(slotHover != -1) GridSwap(gridDrag, slotDrag, gridHover, slotHover)
 		
 		//Return to free state
 		
 		state = stateFree;
 		itemDrag = -1;
-		inventoryDrag = -1;
+		gridDrag = -1;
 		slotDrag = -1;
 	}
 }

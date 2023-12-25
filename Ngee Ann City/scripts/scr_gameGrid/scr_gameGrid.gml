@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
 function GridSwap(objectFrom,slotFrom,objectTo,slotTo){
-	var _itemFrom = objectFrom.inventory[slotFrom]
-	objectFrom.inventory[slotFrom] = objectTo.inventory[slotTo];
-	objectTo.inventory[slotTo] = _itemFrom;
+	var _itemFrom = objectFrom.mapgrid[slotFrom]
+	objectFrom.mapgrid[slotFrom] = objectTo.mapgrid[slotTo];
+	objectTo.mapgrid[slotTo] = _itemFrom;
 }
