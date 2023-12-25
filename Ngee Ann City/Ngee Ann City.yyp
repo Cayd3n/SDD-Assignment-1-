@@ -36,6 +36,7 @@
   },
   "resources": [
     {"id":{"name":"obj_Button_load","path":"objects/obj_Button_load/obj_Button_load.yy",},},
+    {"id":{"name":"rm_Game","path":"rooms/rm_Game/rm_Game.yy",},},
     {"id":{"name":"spr_ResidentialBlk","path":"sprites/spr_ResidentialBlk/spr_ResidentialBlk.yy",},},
     {"id":{"name":"obj_Button_parent","path":"objects/obj_Button_parent/obj_Button_parent.yy",},},
     {"id":{"name":"obj_MainMenu_Select","path":"objects/obj_MainMenu_Select/obj_MainMenu_Select.yy",},},
@@ -66,6 +67,7 @@
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"rm_Title","path":"rooms/rm_Title/rm_Title.yy",},},
+    {"roomId":{"name":"rm_Game","path":"rooms/rm_Game/rm_Game.yy",},},
     {"roomId":{"name":"rm_Highscore","path":"rooms/rm_Highscore/rm_Highscore.yy",},},
   ],
   "templateType": "game",
