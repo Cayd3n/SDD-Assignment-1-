@@ -14,7 +14,7 @@ for (var i = 0; i < MAP_SLOTS2; i += 1)
 	var yy = y + (i div rowLength) * 64 + 4;
 	draw_sprite(spr_Grid,0,xx,yy);
 	var random_building = random_range(5,5);
-	draw_sprite(building_list[random_building], mapgrid[i], xx, yy);
+	//draw_sprite(building_list[random_building], mapgrid[i], xx, yy);
 	//The mapgrid doesn't return -1 when its empty
 	if (mapgrid[i] != -1)
 	{
@@ -22,4 +22,5 @@ for (var i = 0; i < MAP_SLOTS2; i += 1)
 		draw_sprite(building_list[random_building], mapgrid[i], xx, yy);
 	}
 }
+
 
