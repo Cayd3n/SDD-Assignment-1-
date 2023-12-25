@@ -20,6 +20,7 @@
   "ResourceOrderSettings": [
     {"name":"obj_Button_load","order":2,"path":"objects/obj_Button_load/obj_Button_load.yy",},
     {"name":"rm_Game","order":1,"path":"rooms/rm_Game/rm_Game.yy",},
+    {"name":"spr_Background","order":9,"path":"sprites/spr_Background/spr_Background.yy",},
     {"name":"obj_MainMenu_Select","order":5,"path":"objects/obj_MainMenu_Select/obj_MainMenu_Select.yy",},
     {"name":"spr_Title","order":7,"path":"sprites/spr_Title/spr_Title.yy",},
     {"name":"obj_Button_play","order":1,"path":"objects/obj_Button_play/obj_Button_play.yy",},
@@ -35,6 +36,7 @@
     {"name":"obj_Highlight","order":7,"path":"objects/obj_Highlight/obj_Highlight.yy",},
     {"name":"obj_Commerical","order":1,"path":"objects/obj_Commerical/obj_Commerical.yy",},
     {"name":"rm_Highscore","order":2,"path":"rooms/rm_Highscore/rm_Highscore.yy",},
+    {"name":"obj_BuildOptions","order":10,"path":"objects/obj_BuildOptions/obj_BuildOptions.yy",},
     {"name":"obj_Road","order":3,"path":"objects/obj_Road/obj_Road.yy",},
     {"name":"spr_Button_Idle","order":5,"path":"sprites/spr_Button_Idle/spr_Button_Idle.yy",},
     {"name":"spr_Road","order":3,"path":"sprites/spr_Road/spr_Road.yy",},
