@@ -13,7 +13,7 @@ for (var i = 0; i < MAP_SLOTS; i += 1)
 	var xx = x + (i mod rowLength) * 64 + 2;
 	var yy = y + (i div rowLength) * 64 + 4;
 	var hover = (obj_Mouse.gridHover == id) && (obj_Mouse.slotHover == i) 
-	draw_sprite(spr_Grid,hover,xx,yy) 
+	draw_sprite(spr_Grid2,hover,xx,yy) 
 	if (mapgrid[i] != -1)
 	{
 		draw_sprite(spr_Road,mapgrid[i],xx,yy);//additional to test
