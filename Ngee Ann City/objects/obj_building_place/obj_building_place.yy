@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_turret_place",
+  "name": "obj_building_place",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_turret_place",
-    "path": "sprites/spr_turret_place/spr_turret_place.yy",
+    "name": "spr_ResidentialBlk",
+    "path": "sprites/spr_ResidentialBlk/spr_ResidentialBlk.yy",
   },
   "spriteMaskId": null,
   "visible": true,

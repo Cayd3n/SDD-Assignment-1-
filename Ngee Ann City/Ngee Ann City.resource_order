@@ -19,7 +19,7 @@
   ],
   "ResourceOrderSettings": [
     {"name":"obj_Button_load","order":2,"path":"objects/obj_Button_load/obj_Button_load.yy",},
-    {"name":"obj_turret_place","order":13,"path":"objects/obj_turret_place/obj_turret_place.yy",},
+    {"name":"obj_building_place","order":13,"path":"objects/obj_building_place/obj_building_place.yy",},
     {"name":"rm_Game","order":1,"path":"rooms/rm_Game/rm_Game.yy",},
     {"name":"spr_Grid2","order":10,"path":"sprites/spr_Grid2/spr_Grid2.yy",},
     {"name":"spr_Background","order":9,"path":"sprites/spr_Background/spr_Background.yy",},
@@ -42,6 +42,7 @@
     {"name":"spr_turret","order":15,"path":"sprites/spr_turret/spr_turret.yy",},
     {"name":"obj_Highlight","order":7,"path":"objects/obj_Highlight/obj_Highlight.yy",},
     {"name":"spr_water_tls","order":17,"path":"sprites/spr_water_tls/spr_water_tls.yy",},
+    {"name":"Sprite18","order":14,"path":"sprites/Sprite18/Sprite18.yy",},
     {"name":"obj_Commerical","order":1,"path":"objects/obj_Commerical/obj_Commerical.yy",},
     {"name":"spr_obstruction","order":13,"path":"sprites/spr_obstruction/spr_obstruction.yy",},
     {"name":"rm_Highscore","order":2,"path":"rooms/rm_Highscore/rm_Highscore.yy",},
