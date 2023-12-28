@@ -1,52 +1,34 @@
-/// @description Insert description here
-// You can write your code in this editor
-/*
+move_snap(64,64);
 
-if(x != mouse_xAxis){
-	//If object is on the left side of mouse position, move right
-	if(x < mouse_xAxis){
-		x += 10; //Increments by 1 for the x axis
-		
-	}
-	//If object is on the right sidde of mouse position, move left
-	if(x > mouse_xAxis){
-		x -= 10; //Decrease by 1 for the x axis
-		
-	}
-	//Prevent object from moving outside the grid or map
-	if x < 0 {
-	    x = 0; // Prevent object from moving beyond the left boundary
-		
-	}
-	if x > room_width {
-	    x = room_width; // Prevent object from moving beyond the right boundary
-		
+
+/// Check for identical road sprites
+
+// This function checks for identical sprites in the specified row.
+
+var gameScore = 0;
+
+function CheckRoads()
+{
+	var gridSize = 64;
+	var spriteWidth = 64; // Assuming each sprite has a width of 32 pixels
+	
+
+	// Loop through each row
+	for (var row = 0; row < gridSize; row++)
+	{
+	    // Loop through each column
+	    for (var col = 0; col < gridSize; col++)
+	    {
+	        // Get the current sprite index
+	        var currentSprite = tilemap_get(tilemap, col, row); // Replace 'tilemap' with your actual tilemap variable name
+
+	        // Check if the current sprite matches the right neighbor
+	        if (col < gridSize - 1 && currentSprite == tilemap_get(tilemap, col + 1, row))
+	        {
+	            gameScore += 1;
+	        }
+	    }
 	}
 }
-
-if(y != mouse_yAxis){
-	//If object is above mouse position, move down
-	if(y < mouse_yAxis){
-		y += 10; //Increments by 1 for the y axis
-		move_snap(16, 16);
-	}
-	//If object is below mouse position, move up
-	if(y > mouse_yAxis){
-		y -= 10; //Decrease by 1 for the y axis
-		move_snap(16, 16);
-	}
-	//Prevent object from moving outside the grid or map
-	if y < 0 {
-		y = 0; // Prevent object from moving beyond the top boundary
-		move_snap(16, 16);
-	}
-	if y > room_height {
-	    y = room_height; // Prevent object from moving beyond the bottom boundary
-		move_snap(16, 16);
-	}
-}
-
-*/
-
 
 
