@@ -16,6 +16,7 @@ for (var i = 0; i < MAP_SLOTS; i += 1)
 	draw_sprite(spr_Grid,hover,xx,yy) 
 	if (mapgrid[i] != -1)
 	{
+		draw_sprite(spr_Road,mapgrid[i],xx,yy);//additional to test
 		var alpha = 1.0
 		if (obj_Mouse.gridDrag == id) && (obj_Mouse.gridDrag == i) alpha = 0.5;
 		draw_set_alpha(alpha);

@@ -25,14 +25,14 @@ mouseOver = function()
 			my,
 			x-6,
 			y-6,
-			12+rowLength*64,
-			12+(((MAP_SLOTS-1) div rowLength)+1)*64
+			x-6 + 12+rowLength*64,
+			y-6 + 12+(((MAP_SLOTS-1) div rowLength)+1)*64
 		))
 		{
 			//check for mouseover in each slot
 			for(var i = 0; i < MAP_SLOTS; i += 1)
 			{
-				var xx = x + (i mod rowLength) * 64 + 2;
+				var xx = x + (i mod rowLength) * 64 + 4;
 				var yy = y + (i mod rowLength) * 64 + 4;
 				if(point_in_rectangle(mx,my,xx,yy,xx+64,yy+64))
 				{
