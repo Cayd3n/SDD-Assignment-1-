@@ -4,6 +4,8 @@ gridDrag = -1;
 slotDrag = -1;
 itemDrag = -1;
 
+
+
 mouseOver = function()
 {
 	//Empty grid from hover results
@@ -23,16 +25,16 @@ mouseOver = function()
 			my,
 			x-6,
 			y-6,
-			x-6 + 12+rowLength*36,
-			y-6 + 12+(((MAP_SLOTS-1) div rowLength)+1)*36
+			12+rowLength*64,
+			12+(((MAP_SLOTS-1) div rowLength)+1)*64
 		))
 		{
 			//check for mouseover in each slot
 			for(var i = 0; i < MAP_SLOTS; i += 1)
 			{
-				var xx = x + (i mod rowLength) * 36 + 2;
-				var yy = y + (i mod rowLength) * 36 + 2;
-				if(point_in_rectangle(mx,my,xx,yy,xx+32,yy+32))
+				var xx = x + (i mod rowLength) * 64 + 2;
+				var yy = y + (i mod rowLength) * 64 + 4;
+				if(point_in_rectangle(mx,my,xx,yy,xx+64,yy+64))
 				{
 					other.slotHover = i;
 					other.gridHover = id;
