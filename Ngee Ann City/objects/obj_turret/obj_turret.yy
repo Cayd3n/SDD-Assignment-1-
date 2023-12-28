@@ -28,8 +28,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_turret",
-    "path": "sprites/spr_turret/spr_turret.yy",
+    "name": "spr_ResidentialBlk",
+    "path": "sprites/spr_ResidentialBlk/spr_ResidentialBlk.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -36,7 +36,7 @@
   },
   "resources": [
     {"id":{"name":"obj_Button_load","path":"objects/obj_Button_load/obj_Button_load.yy",},},
-    {"id":{"name":"obj_turret_place","path":"objects/obj_turret_place/obj_turret_place.yy",},},
+    {"id":{"name":"obj_building_place","path":"objects/obj_building_place/obj_building_place.yy",},},
     {"id":{"name":"rm_Game","path":"rooms/rm_Game/rm_Game.yy",},},
     {"id":{"name":"spr_ResidentialBlk","path":"sprites/spr_ResidentialBlk/spr_ResidentialBlk.yy",},},
     {"id":{"name":"spr_Grid2","path":"sprites/spr_Grid2/spr_Grid2.yy",},},
@@ -63,6 +63,7 @@
     {"id":{"name":"spr_turret","path":"sprites/spr_turret/spr_turret.yy",},},
     {"id":{"name":"obj_Highlight","path":"objects/obj_Highlight/obj_Highlight.yy",},},
     {"id":{"name":"spr_water_tls","path":"sprites/spr_water_tls/spr_water_tls.yy",},},
+    {"id":{"name":"Sprite18","path":"sprites/Sprite18/Sprite18.yy",},},
     {"id":{"name":"obj_Commerical","path":"objects/obj_Commerical/obj_Commerical.yy",},},
     {"id":{"name":"spr_obstruction","path":"sprites/spr_obstruction/spr_obstruction.yy",},},
     {"id":{"name":"rm_Highscore","path":"rooms/rm_Highscore/rm_Highscore.yy",},},
