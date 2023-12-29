@@ -20,7 +20,7 @@
 
 
 var gridSquareWidth = 64; // Replace with the actual width of each grid square
-var gridSquareHeight = 96; // Replace with the actual height of each grid square
+var gridSquareHeight = 64; // Replace with the actual height of each grid square
 
 if (keyboard_check(vk_right)) {
     // Check for collision with other objects to the right
