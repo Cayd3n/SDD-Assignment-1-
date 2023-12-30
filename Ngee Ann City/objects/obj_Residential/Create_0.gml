@@ -1,4 +1,4 @@
-global.points += 1;
+global.points = 1;
 
 
 
