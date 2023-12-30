@@ -30,10 +30,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_ResidentialBlk",
-    "path": "sprites/spr_ResidentialBlk/spr_ResidentialBlk.yy",
+  "spriteId": null,
+  "spriteMaskId": {
+    "name": "spr_CommercialBlk",
+    "path": "sprites/spr_CommercialBlk/spr_CommercialBlk.yy",
   },
-  "spriteMaskId": null,
   "visible": true,
 }
