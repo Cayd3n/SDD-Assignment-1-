@@ -40,6 +40,7 @@
     {"id":{"name":"rm_Game","path":"rooms/rm_Game/rm_Game.yy",},},
     {"id":{"name":"spr_ResidentialBlk","path":"sprites/spr_ResidentialBlk/spr_ResidentialBlk.yy",},},
     {"id":{"name":"spr_Grid2","path":"sprites/spr_Grid2/spr_Grid2.yy",},},
+    {"id":{"name":"spr_Highlight","path":"sprites/spr_Highlight/spr_Highlight.yy",},},
     {"id":{"name":"spr_Background","path":"sprites/spr_Background/spr_Background.yy",},},
     {"id":{"name":"obj_Button_parent","path":"objects/obj_Button_parent/obj_Button_parent.yy",},},
     {"id":{"name":"obj_MainMenu_Select","path":"objects/obj_MainMenu_Select/obj_MainMenu_Select.yy",},},

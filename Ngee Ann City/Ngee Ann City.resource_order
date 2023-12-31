@@ -22,6 +22,7 @@
     {"name":"obj_building_place","order":13,"path":"objects/obj_building_place/obj_building_place.yy",},
     {"name":"rm_Game","order":1,"path":"rooms/rm_Game/rm_Game.yy",},
     {"name":"spr_Grid2","order":9,"path":"sprites/spr_Grid2/spr_Grid2.yy",},
+    {"name":"spr_Highlight","order":17,"path":"sprites/spr_Highlight/spr_Highlight.yy",},
     {"name":"spr_Background","order":8,"path":"sprites/spr_Background/spr_Background.yy",},
     {"name":"obj_MainMenu_Select","order":5,"path":"objects/obj_MainMenu_Select/obj_MainMenu_Select.yy",},
     {"name":"obj_obstruction","order":11,"path":"objects/obj_obstruction/obj_obstruction.yy",},
