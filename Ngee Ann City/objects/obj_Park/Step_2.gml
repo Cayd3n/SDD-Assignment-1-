@@ -2,4 +2,4 @@
 // You can write your code in this editor
 
 
-show_debug_message("Points: " + string(global.points));
+//show_debug_message("Points: " + string(global.points));
