@@ -1,5 +1,4 @@
-global.points = 1;
-
+var adjacentIndustry = false;
 
 
 
