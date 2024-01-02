@@ -12,8 +12,8 @@ for (var j = 0; j < gridWidth; j++) {
         var obj = instance_position(j * gridSquareWidth, z * gridSquareHeight, obj_Commercial); // Check if the object at cell (i, j) is obj_Park
         if (obj != noone) {
 			
-		    var checkx = i * gridSquareWidth; // Calculate the x-coordinate of the cell
-            var checky = j * gridSquareHeight; // Calculate the y-coordinate of the cell
+		    var checkx = j * gridSquareWidth; // Calculate the x-coordinate of the cell
+            var checky = z * gridSquareHeight; // Calculate the y-coordinate of the cell
             
             var adjacentCommercial = 0;
 		
