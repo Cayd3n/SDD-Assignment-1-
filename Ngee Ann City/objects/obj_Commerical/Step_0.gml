@@ -1,5 +1,29 @@
-var gameScore = 0;
+var commercialPoints = 0;
 var coinCount = 0;
+
+
+function CheckAdjacent(col, row, coinValue)
+{
+    // Check if the coordinate is within the grid boundaries
+    if (col >= 0 && col < gridSize && row >= 0 && row < gridSize)
+    {
+        // Get the sprite at the specified coordinate
+        var adjacentSprite = tilemap_get(tilemap, col, row);
+
+        // Check if the adjacent sprite is residential
+        if (adjacentSprite == "spr_ResidentialBlk") // Assuming "R" represents a Residential sprite
+        {
+            // Increment the coin count
+            coinCount += coinValue;
+        }
+        // Check if the adjacent sprite is another commercial
+        else if (adjacentSprite == "spr_CommercialBlk") // Assuming "C" represents a Commercial sprite
+        {
+            // Increment the game score
+            commercialPoints += 1;
+        }
+    }
+}
 
 function CheckCommercials()
 {
@@ -28,25 +52,7 @@ function CheckCommercials()
     }
 }
 
-function CheckAdjacent(col, row, coinValue)
-{
-    // Check if the coordinate is within the grid boundaries
-    if (col >= 0 && col < gridSize && row >= 0 && row < gridSize)
-    {
-        // Get the sprite at the specified coordinate
-        var adjacentSprite = tilemap_get(tilemap, col, row);
 
-        // Check if the adjacent sprite is residential
-        if (adjacentSprite == "spr_ResidentialBlk") // Assuming "R" represents a Residential sprite
-        {
-            // Increment the coin count
-            coinCount += coinValue;
-        }
-        // Check if the adjacent sprite is another commercial
-        else if (adjacentSprite == "spr_CommercialBlk") // Assuming "C" represents a Commercial sprite
-        {
-            // Increment the game score
-            gameScore += 1;
-        }
-    }
-}
+
+global.points += commercialPoints ;
+show_debug_message("Commercial Points: " + string(commercialPoints ));
