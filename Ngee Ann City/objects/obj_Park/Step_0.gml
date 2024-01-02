@@ -50,18 +50,19 @@ for (var i = 0; i < gridWidth; i++) {
             var checky = j * gridSquareHeight; // Calculate the y-coordinate of the cell
             
             var adjacentParks = 0;
+		
 
             // Check for adjacent parks
-            if (place_meeting(checkx + gridSquareWidth, checky, obj_Park)) {
+            if (position_meeting(checkx + gridSquareWidth, checky, obj_Park)) {
                 adjacentParks += 1;
             }
-            if (place_meeting(checkx - gridSquareWidth, checky, obj_Park)) {
+            if (position_meeting(checkx - gridSquareWidth, checky, obj_Park)) {
                 adjacentParks += 1;
             }
-            if (place_meeting(checkx, checky + gridSquareHeight, obj_Park)) {
+            if (position_meeting(checkx, checky + gridSquareHeight, obj_Park)) {
                 adjacentParks += 1;
             }
-            if (place_meeting(checkx, checky - gridSquareHeight, obj_Park)) {
+            if (position_meeting(checkx, checky - gridSquareHeight, obj_Park)) {
                 adjacentParks += 1;
             }
 
@@ -75,5 +76,6 @@ for (var i = 0; i < gridWidth; i++) {
         }
     }
 }
+//global.points += pPoints;
 show_debug_message("Park Points: " + string(pPoints));
 
