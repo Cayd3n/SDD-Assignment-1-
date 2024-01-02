@@ -52,7 +52,7 @@ for (var i = 0; i < xPixels + 1; i += gridSize) //Loops through the x pixels fro
 		}
 	}
 }
-//global.points += cRoads
+//global.points += cRoads;
 show_debug_message("Road Points: " + string(cRoads));
 
 
