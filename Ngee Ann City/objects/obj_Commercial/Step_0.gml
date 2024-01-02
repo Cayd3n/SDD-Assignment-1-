@@ -3,8 +3,7 @@ var gridSquareHeight = 64;
 var gridWidth = room_width div gridSquareWidth; // Calculate the number of cells in the x-direction
 var gridHeight = room_height div gridSquareHeight; // Calculate the number of cells in the y-direction
 var commercialPoints = 0;
-
-
+var coinCount = 0;
 
 
 for (var j = 0; j < gridWidth; j++) {
@@ -37,10 +36,26 @@ for (var j = 0; j < gridWidth; j++) {
            obj.points = adjacentCommercial; // Set points for the current park object
            commercialPoints += adjacentCommercial; // Accumulate points for all park objects
 			
-			
+			// Check for adjacent residential and generate coins
+            if (position_meeting(checkx + gridSquareWidth, checky, obj_Residential)) {
+                coinCount += 1;
+            }
+            if (position_meeting(checkx - gridSquareWidth, checky, obj_Residential)) {
+                coinCount += 1;
+            }
+            if (position_meeting(checkx, checky + gridSquareHeight, obj_Residential)) {
+                coinCount += 1;
+            }
+            if (position_meeting(checkx, checky - gridSquareHeight, obj_Residential)) {
+                coinCount += 1;
+            }
 
         }
     }
 }
-//global.points += pPoints;
+
+
 show_debug_message("Commercial Points: " + string(commercialPoints));
+show_debug_message("Total Coins Generated: " + string(coinCount));
+
+
