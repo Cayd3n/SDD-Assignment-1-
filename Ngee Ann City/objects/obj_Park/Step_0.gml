@@ -75,5 +75,6 @@ for (var i = 0; i < gridWidth; i++) {
         }
     }
 }
-show_debug_message("Park Points: " + string(pPoints));
+global.points += pPoints;
+//show_debug_message("Park Points: " + string(pPoints));
 
