@@ -27,7 +27,7 @@ var gridSquareHeight = 64; // Replace with the actual height of each grid square
 if (keyboard_check(vk_down)) {
 	
 	// Check for collision with other objects below it
-    if (!place_meeting(x, y + gridSquareHeight, obj_Road) && !place_meeting(x, y + gridSquareHeight, obj_Park) && !place_meeting(x, y + gridSquareHeight, obj_Commerical) && !place_meeting(x, y + gridSquareHeight, obj_Residential) && !place_meeting(x, y + gridSquareHeight, obj_Industrial)) {
+    if (!place_meeting(x, y + gridSquareHeight, obj_Road) && !place_meeting(x, y + gridSquareHeight, obj_Park) && !place_meeting(x, y + gridSquareHeight, obj_Commercial) && !place_meeting(x, y + gridSquareHeight, obj_Residential) && !place_meeting(x, y + gridSquareHeight, obj_Industrial)) {
         // Move the object down by increasing its y-coordinate by the grid square height
 		 y += gridSquareHeight;
     

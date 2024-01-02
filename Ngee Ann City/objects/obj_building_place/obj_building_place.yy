@@ -32,8 +32,8 @@
   "solid": false,
   "spriteId": null,
   "spriteMaskId": {
-    "name": "spr_CommercialBlk",
-    "path": "sprites/spr_CommercialBlk/spr_CommercialBlk.yy",
+    "name": "spr_Commercial",
+    "path": "sprites/spr_Commercial/spr_Commercial.yy",
   },
   "visible": true,
 }

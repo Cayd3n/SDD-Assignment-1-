@@ -1,4 +1,4 @@
-building_array = [obj_Commerical, obj_Industrial, obj_Park, obj_Residential, obj_Road] //Array containing all buildings
+building_array = [obj_Commercial, obj_Industrial, obj_Park, obj_Residential, obj_Road] //Array containing all buildings
 
 var bListLen = array_length(building_array); //Total length of building list
 var firstRound = true; //Variable for the first round of game set to true

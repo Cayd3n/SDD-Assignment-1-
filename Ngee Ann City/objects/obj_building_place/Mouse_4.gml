@@ -12,7 +12,7 @@ if (image_index == 0) {//if no obstructions (then image_index will be 0)
 		}
 		if(random_buildingA == 1)
 		{
-			instance_create_layer(x,y,"Obstructions",obj_Commerical);
+			instance_create_layer(x,y,"Obstructions",obj_Commercial);
 		}
 		if(random_buildingA == 2)
 		{
@@ -38,7 +38,7 @@ if (image_index == 0) {//if no obstructions (then image_index will be 0)
 		
 		if(random_buildingB == 1)
 		{
-			instance_create_layer(x,y,"Obstructions",obj_Commerical);
+			instance_create_layer(x,y,"Obstructions",obj_Commercial);
 		}
 		
 		
