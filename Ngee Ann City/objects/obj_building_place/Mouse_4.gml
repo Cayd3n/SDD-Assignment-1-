@@ -8,23 +8,23 @@ if (image_index == 0) {//if no obstructions (then image_index will be 0)
 	{
 		if(random_buildingA == 0)
 		{
-			instance_create_layer(x,y,"Obstructions",obj_Residential);
+			instance_create_layer(x,y,"Buildings",obj_Residential);
 		}
 		if(random_buildingA == 1)
 		{
-			instance_create_layer(x,y,"Obstructions",obj_Commercial);
+			instance_create_layer(x,y,"Buildings",obj_Commercial);
 		}
 		if(random_buildingA == 2)
 		{
-			instance_create_layer(x,y,"Obstructions",obj_Industrial);
+			instance_create_layer(x,y,"Buildings",obj_Industrial);
 		}
 		if(random_buildingA == 3)
 		{
-			instance_create_layer(x,y,"Obstructions",obj_Park);
+			instance_create_layer(x,y,"Buildings",obj_Park);
 		}
 		if(random_buildingA == 4)
 		{
-			instance_create_layer(x,y,"Obstructions",obj_Road);
+			instance_create_layer(x,y,"Buildings",obj_Road);
 			//show_debug_message("Road x : " + string(x)); //Show x coordinates of road 
 			//show_debug_message("Road y : " + string(y)); //Show y coordinates of road 
 		}
@@ -33,32 +33,33 @@ if (image_index == 0) {//if no obstructions (then image_index will be 0)
 	{
 		if(random_buildingB == 0)
 		{
-			instance_create_layer(x,y,"Obstructions",obj_Residential);
+			instance_create_layer(x,y,"Buildings",obj_Residential);
 		}
 		
 		if(random_buildingB == 1)
 		{
-			instance_create_layer(x,y,"Obstructions",obj_Commercial);
+			instance_create_layer(x,y,"Buildings",obj_Commercial);
 		}
 		
 		
 		if(random_buildingB == 2)
 		{
-			instance_create_layer(x,y,"Obstructions",obj_Industrial);
+			instance_create_layer(x,y,"Buildings",obj_Industrial);
 		}
 		
 	    if(random_buildingB == 3)
 		{
-			instance_create_layer(x,y,"Obstructions",obj_Park);
+			instance_create_layer(x,y,"Buildings",obj_Park);
 		}
 		
 	    if(random_buildingB == 4)
 		{
-			instance_create_layer(x,y,"Obstructions",obj_Road);
+			instance_create_layer(x,y,"Buildings",obj_Road);
 			//show_debug_message("Road x : " + string(x)); //Show x coordinates of road 
 			//show_debug_message("Road y : " + string(y)); //Show y coordinates of road 
 		}
 	}
 	placed_building1 = false;
 	placed_building2 = false;
+	global.coins -= 1;
 }
