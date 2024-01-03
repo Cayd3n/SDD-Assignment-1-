@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_gameGrid",
+  "name": "scr_saveLoadGame",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

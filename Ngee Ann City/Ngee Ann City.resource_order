@@ -52,6 +52,7 @@
     {"name":"obj_BuildOptions","order":10,"path":"objects/obj_BuildOptions/obj_BuildOptions.yy",},
     {"name":"obj_Road","order":3,"path":"objects/obj_Road/obj_Road.yy",},
     {"name":"spr_grid","order":11,"path":"sprites/spr_grid/spr_grid.yy",},
+    {"name":"obj_SaveLoad","order":15,"path":"objects/obj_SaveLoad/obj_SaveLoad.yy",},
     {"name":"obj_Mouse","order":9,"path":"objects/obj_Mouse/obj_Mouse.yy",},
     {"name":"obj_turret","order":12,"path":"objects/obj_turret/obj_turret.yy",},
     {"name":"spr_turret_place","order":15,"path":"sprites/spr_turret_place/spr_turret_place.yy",},
