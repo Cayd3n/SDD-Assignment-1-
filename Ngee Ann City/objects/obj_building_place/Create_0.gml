@@ -32,3 +32,17 @@ function check_buildings(xBuilding, yBuilding)
 		}
 	}
 }
+
+//Function to remove all highlights 
+function remove_highlight_all()
+{
+	var a = layer_get_all_elements("Highlight"); //Variable a to store all elements on highlight layer
+	for (var i = 0; i < array_length(a); i++;) //Loop through all elements from the length of variable a
+	{
+	    if layer_get_element_type(a[i]) == layerelementtype_sprite //If element type is a sprite
+	    {
+	        layer_sprite_destroy(a[i]) //Removal of element a from layer
+	    }
+	}
+	//show_debug_message("Still running");
+}

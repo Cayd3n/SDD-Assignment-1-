@@ -21,20 +21,6 @@ function highlight_all()
 	//show_debug_message("Highlight all function, complete.");
 }
 
-//Function to remove all highlights 
-function remove_highlight_all()
-{
-	var a = layer_get_all_elements("Highlight"); //Variable a to store all elements on highlight layer
-	for (var i = 0; i < array_length(a); i++;) //Loop through all elements from the length of variable a
-	{
-	    if layer_get_element_type(a[i]) == layerelementtype_sprite //If element type is a sprite
-	    {
-	        layer_sprite_destroy(a[i]) //Removal of element a from layer
-	    }
-	}
-	//show_debug_message("Still running");
-}
-
 
 for (var i = 0; i < xGridWidth + 1; i+= cGridSize) //Loops through the x pixels from 0 to 1216
 { 
@@ -105,8 +91,5 @@ for (var i = 0; i < xGridWidth + 1; i+= cGridSize) //Loops through the x pixels 
 if(global.gamerounds == 0)
 {
 	highlight_all(); //Highlight all cells on the grid available for construction
-}else if (global.gamerounds == 1)
-{
-	remove_highlight_all();
 }
 
