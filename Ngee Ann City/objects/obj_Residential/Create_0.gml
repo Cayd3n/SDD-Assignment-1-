@@ -1,4 +1,4 @@
-var adjacentIndustry = false;
+justAdjacent = false;
 
 
 

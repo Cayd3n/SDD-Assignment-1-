@@ -55,7 +55,7 @@ for (var j = 0; j < gridWidth; j++) {
 }
 
 
-show_debug_message("Commercial Points: " + string(commercialPoints));
-show_debug_message("Total Coins Generated: " + string(coinCount));
+//show_debug_message("Commercial Points: " + string(commercialPoints));
+//show_debug_message("Total Coins Generated: " + string(coinCount));
 
 
