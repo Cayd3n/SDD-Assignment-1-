@@ -5,10 +5,39 @@ y = mouse_y;
 //then snap to a grid, the numbers determine the width/height in pixels of each cell in the virtual grid
 move_snap(64,64);
 
-//check for obstructions
-if (collision_rectangle(x-32,y-32,x+31,y+31,obj_obstruction,1,1)) {//48x48px square covering obj_turret_place
+////check for obstructions
+//if (collision_rectangle(x-32,y-32,x+31,y+31,obj_obstruction,1,1)) {//48x48px square covering obj_turret_place
+//	image_index = 1;//obstruction
+//}
+//else 
+//{
+//	image_index = 0;//no obstruction
+//}
+
+
+if (position_meeting(x, y, obj_Commercial))
+{
 	image_index = 1;//obstruction
 }
-else {
+else if (position_meeting(x, y, obj_Industrial))
+{
+	image_index = 1;//obstruction
+}
+else if (position_meeting(x, y, obj_Park))
+{
+	image_index = 1;//obstruction
+}
+else if (position_meeting(x, y, obj_Residential))
+{
+	image_index = 1;//obstruction
+}
+else if (position_meeting(x, y, obj_Road))
+{
+	image_index = 1;//obstruction
+}
+else
+{
 	image_index = 0;//no obstruction
 }
+
+
