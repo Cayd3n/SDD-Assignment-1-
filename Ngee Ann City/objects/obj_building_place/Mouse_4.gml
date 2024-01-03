@@ -71,6 +71,8 @@ if (image_index == 0) {//if no obstructions (then image_index will be 0)
 		placed_building1 = false;
 		placed_building2 = false;
 		global.coins -= 1;
+		global.gamerounds += 1;
+		//show_debug_message("Game Round: " + string(global.gamerounds));
 	}
 	
 }
