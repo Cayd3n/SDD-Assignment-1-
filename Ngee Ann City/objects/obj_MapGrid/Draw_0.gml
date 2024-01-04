@@ -63,7 +63,7 @@ if (keyboard_check_pressed(vk_right)) {
 
 
 // Step Event - Handling menu selection
-if (keyboard_check_pressed(vk_enter) && isMenuVisible) {
+if (keyboard_check_pressed(vk_enter) && !isMenuVisible) {
     switch (optionIndex) {
         case 0:
             // Option 1: Start new game
@@ -74,7 +74,8 @@ if (keyboard_check_pressed(vk_enter) && isMenuVisible) {
         case 1:
             // Option 2: Load saved game
             show_message("Loading saved game...");
-            // Add your code to load a saved game here
+            remove_highlight_all();
+			load_game();
             break;
 
         case 2:
