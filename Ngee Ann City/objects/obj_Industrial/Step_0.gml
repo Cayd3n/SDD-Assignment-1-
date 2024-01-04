@@ -2,13 +2,13 @@ var gridSquareWidth = 64;
 var gridSquareHeight = 64;
 var gridWidth = room_width div gridSquareWidth; // Calculate the number of cells in the x-direction
 var gridHeight = room_height div gridSquareHeight; // Calculate the number of cells in the y-direction
-var industrialPoints = 0;
-var coinCount = 0
+industrialPoints = 0;
+coinCount = 0
 
 
 for (var i = 0; i < gridWidth; i++) {
     for (var j = 0; j < gridHeight; j++) {
-        var obj = instance_position(i * gridSquareWidth, j * gridSquareHeight, obj_Park); // Check if the object at cell (i, j) is obj_Park
+        var obj = instance_position(i * gridSquareWidth, j * gridSquareHeight, obj_Industrial); // Check if the object at cell (i, j) is obj_Park
         if (obj != noone) {
 			
 		    var checkx = i * gridSquareWidth; // Calculate the x-coordinate of the cell
@@ -32,7 +32,7 @@ for (var i = 0; i < gridWidth; i++) {
                 adjacentIndustrial += 1;
             }
 
-		   obj.points += adjacentIndustrial
+		   //obj.points += adjacentIndustrial
 		   industrialPoints += adjacentIndustrial
 		   
 		   // Check for adjacent residential and generate coins
@@ -53,3 +53,6 @@ for (var i = 0; i < gridWidth; i++) {
         }
     }
 }
+//show_debug_message(coinCount)
+//show_debug_message(industrialPoints)
+

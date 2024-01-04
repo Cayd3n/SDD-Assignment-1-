@@ -1,8 +1,5 @@
-/// @description Insert description here
-// You can write your code in this editor
-
-
-
+commercialPoints = 0;
+coinCount = 0;
 
 
 

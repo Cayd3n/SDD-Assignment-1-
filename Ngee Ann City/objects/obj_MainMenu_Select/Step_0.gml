@@ -29,19 +29,10 @@ if (keyboard_check_pressed(vk_enter))
 		room_goto(rm_Game)
 	
 	}
-	else if(selection == 1)
+	else if(selection == 2)
 	{
-		//room_goto(rm_Game);
-		//show_message("Loading saved game...");
-		//load_game();
-		//alarm[0] = room_speed * 10; // Set the alarm to wait for 10 seconds
-		//if (alarm[0] == 0) 
-		//{
-		//	show_debug_message("10s");
-		//	load_game();
-		//}
-		
-	}else if (selection == 2)
+		room_goto(rm_Highscore)
+	}else if (selection == 3)
 	{
 		game_end();
 	}

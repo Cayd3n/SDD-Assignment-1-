@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-industrialPoints = 0;
-coinCount = 0;
+
+draw_text(988, 1440, "Score:" + string(points))
 
 

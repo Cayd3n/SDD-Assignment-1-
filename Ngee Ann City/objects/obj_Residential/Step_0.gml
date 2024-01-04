@@ -4,7 +4,8 @@ var gridWidth = room_width div gridSquareWidth; // Calculate the number of cells
 var gridHeight = room_height div gridSquareHeight; // Calculate the number of cells in the y-direction
 var nonIndustry = 0;
 var adjacentIndustry = false;
-var rPoints = 0;
+rPoints = 0;
+temp = 0;
 
 
 
@@ -36,6 +37,7 @@ for (var i = 0; i < gridWidth; i++) {
 			
   
 		}
+		
 		if (adjacentIndustry != true)
 		{
 			 var obj = instance_position(i * gridSquareWidth, j * gridSquareHeight, obj_Residential); // Check if the object at cell (i, j) is obj_Park
@@ -64,7 +66,7 @@ for (var i = 0; i < gridWidth; i++) {
 
 
 
-			   obj.points = adjacentResidences;
+	
 			   rPoints += adjacentResidences; // Accumulate points for all residential objects
 		  
 			
@@ -95,7 +97,7 @@ for (var i = 0; i < gridWidth; i++) {
             }
 			
 			
-			 obj.points = adjacentParks;
+	
 			 rPoints += adjacentParks ; // Accumulate points for all park objects
 			
 		
@@ -103,7 +105,6 @@ for (var i = 0; i < gridWidth; i++) {
 		
 		}
     }
-  }
+  }  
 }
 
-show_debug_message(rPoints)

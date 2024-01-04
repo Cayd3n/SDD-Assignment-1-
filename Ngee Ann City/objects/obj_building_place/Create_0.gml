@@ -6,6 +6,7 @@ placed_building2 = false;
 random_buildingA = 1;
 random_buildingB = 2;
 current_building = 1;
+spent_coins = 0;
 building_list = [spr_ResidentialBlk, spr_Commercial, spr_IndustrialBlk, spr_Park, spr_Road]
 randomize()
 

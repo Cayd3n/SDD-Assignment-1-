@@ -67,7 +67,7 @@ if (image_index == 0) {//if no obstructions (then image_index will be 0)
 	current_building = 1; //Reinitialise building 1 back to mouse
 	placed_building1 = false;
 	placed_building2 = false;
-	global.coins -= 1;
+	spent_coins += 1; 
 	remove_highlight_all(); //Removal of all existing highlights potentially below buildings
 	global.gamerounds += 1; //Increment game rounds by 1 after each building placement
 	//show_debug_message("Game Round: " + string(global.gamerounds));

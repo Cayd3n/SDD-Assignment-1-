@@ -1,6 +1,6 @@
 ///Check for identical road sprites
 
-var cRoads = 0; //variable for connected roads
+cRoads = 0; //variable for connected roads
 var gridSize = 64; //variable for each gridsize cell
 var xPixels = 1216; //variable for total x 
 var yPixels = 1216; //variable for total y
@@ -53,7 +53,7 @@ for (var i = 0; i < xPixels + 1; i += gridSize) //Loops through the x pixels fro
 	}
 }
 //global.points += cRoads;
-show_debug_message("Road Points: " + string(cRoads));
+//show_debug_message("Road Points: " + string(cRoads));
 
 
 
