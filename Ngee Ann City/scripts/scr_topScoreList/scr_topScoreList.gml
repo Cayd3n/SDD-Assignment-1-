@@ -43,8 +43,8 @@ function scr_score_save(){
         }
 
         // If the list has more than 10 scores, remove the lowest scores
-        while (ds_list_size(highScores) > 5) {
-            ds_list_delete(highScores, 5);
+        while (ds_list_size(highScores) > 10) {
+            ds_list_delete(highScores, 10);
         }
 
         // Save the high scores to a file
