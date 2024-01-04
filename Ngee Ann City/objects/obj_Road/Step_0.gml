@@ -13,8 +13,6 @@ for (var i = 0; i < xPixels + 1; i += gridSize) //Loops through the x pixels fro
 		if (position_meeting(i, z, obj_Road))
 		{
 			//show_debug_message("Found Road on X: "+ string(i) + " Y: " + string(z));
-			//show_debug_message("Road pts: " + string(cRoads));
-			//(i >= 64 or i <= 1152)
 			if(i == 0) //Checks if the current road sprite has any cells on the right
 			{
 				//show_debug_message("Road found on left");
@@ -52,22 +50,7 @@ for (var i = 0; i < xPixels + 1; i += gridSize) //Loops through the x pixels fro
 		}
 	}
 }
-//global.points += cRoads;
-//show_debug_message("Road Points: " + string(cRoads));
 
-
-
-/*
-function CheckRoads()
-{
-	
-}
-CheckRoads();
-*/
-
-
-
-//show_debug_message("Testing Road points: " + roadPts);
 
 
 

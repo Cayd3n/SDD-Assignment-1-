@@ -1,29 +1,15 @@
-//Handle key inputs
-if(keyboard_check(vk_enter) and string_length(text) < 20) 
+if (string_length(playername)<limit) //Checks if current message is less than 20 characters
 {
-	text += string(keyboard_string);
-	keyboard_string = "";
+	playername = keyboard_string; //Capture key inputs from player
+	show_debug_message(string_length(playername));
+}
+else
+{
+	keyboard_string = playername; //Prevents player from entering more inputs
 }
 
-if(keyboard_check(vk_backspace) and !keyboard_check_pressed(vk_backspace) and delete_timer = 2)
-{
-	text = string_delete(text, string_length(text),1);
-	delete_timer = 0;
-	keyboard_string = "";
-}
-
-if(keyboard_check_pressed(vk_backspace))
-{
-	text = string_delete(text, string_length(text),1);
-	keyboard_string = "";
-	delete_timer = -4;
-}
-
-if(delete_timer != 2)
-{
-	delete_timer ++;
-}
-
+//Global variable to initialise player name from message
+global.initialiseplayername = playername;
 
 
 

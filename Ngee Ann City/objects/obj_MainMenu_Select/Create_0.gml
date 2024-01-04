@@ -5,6 +5,3 @@ options = [ obj_Button_play , obj_Button_load, obj_Button_highscore , obj_Button
 selection = 0;
 //audio_play_sound(snd_TutorialRoomBGM, 1, true);
 
-
-
-

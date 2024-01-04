@@ -81,7 +81,6 @@
     {"id":{"name":"obj_Road","path":"objects/obj_Road/obj_Road.yy",},},
     {"id":{"name":"spr_grid","path":"sprites/spr_grid/spr_grid.yy",},},
     {"id":{"name":"tls_water","path":"tilesets/tls_water/tls_water.yy",},},
-    {"id":{"name":"obj_SaveLoad","path":"objects/obj_SaveLoad/obj_SaveLoad.yy",},},
     {"id":{"name":"obj_Mouse","path":"objects/obj_Mouse/obj_Mouse.yy",},},
     {"id":{"name":"obj_turret","path":"objects/obj_turret/obj_turret.yy",},},
     {"id":{"name":"spr_turret_place","path":"sprites/spr_turret_place/spr_turret_place.yy",},},

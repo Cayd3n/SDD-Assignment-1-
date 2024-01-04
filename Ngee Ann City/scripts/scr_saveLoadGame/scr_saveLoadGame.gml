@@ -24,6 +24,7 @@ function save_game()
 	//Data of game
 	var struct_save = 
 	{
+		gameplayername: global.playername,
 		gamecoins: global.coins,
 		gamepoints: global.points,
 		gamerounds: global.gamerounds
@@ -124,9 +125,11 @@ function load_game()
 		for(var i = 0; i < array_length(load_array); i++)
 		{
 			var struct_load = load_array[i];
+			global.playername = struct_load.gameplayername;
 			global.coins = struct_load.gamecoins;
 			global.points = struct_load.gamepoints;
 			global.gamerounds = struct_load.gamerounds;
+			//show_debug_message(string(global.coins) + string(global.points) + string(global.gamerounds))
 		}
 		
 		file_text_close(load_file); //Close the txt file

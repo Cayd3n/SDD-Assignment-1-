@@ -30,8 +30,6 @@ if (image_index == 0) {//if no obstructions (then image_index will be 0)
 		if(random_buildingA == 4)
 		{
 			instance_create_layer(x,y,"Buildings",obj_Road);
-			//show_debug_message("Road x : " + string(x)); //Show x coordinates of road 
-			//show_debug_message("Road y : " + string(y)); //Show y coordinates of road 
 		}
 	}
 	else
@@ -60,8 +58,6 @@ if (image_index == 0) {//if no obstructions (then image_index will be 0)
 		if(random_buildingB == 4)
 		{
 			instance_create_layer(x,y,"Buildings",obj_Road);
-			//show_debug_message("Road x : " + string(x)); //Show x coordinates of road 
-			//show_debug_message("Road y : " + string(y)); //Show y coordinates of road 
 		}
 	}
 	current_building = 1; //Reinitialise building 1 back to mouse
