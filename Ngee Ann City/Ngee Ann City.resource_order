@@ -26,6 +26,7 @@
     {"name":"spr_Background","order":8,"path":"sprites/spr_Background/spr_Background.yy",},
     {"name":"obj_MainMenu_Select","order":5,"path":"objects/obj_MainMenu_Select/obj_MainMenu_Select.yy",},
     {"name":"obj_obstruction","order":11,"path":"objects/obj_obstruction/obj_obstruction.yy",},
+    {"name":"obj_Score","order":17,"path":"objects/obj_Score/obj_Score.yy",},
     {"name":"spr_Title","order":7,"path":"sprites/spr_Title/spr_Title.yy",},
     {"name":"obj_Button_play","order":1,"path":"objects/obj_Button_play/obj_Button_play.yy",},
     {"name":"spr_IndustrialBlk","order":2,"path":"sprites/spr_IndustrialBlk/spr_IndustrialBlk.yy",},
@@ -58,5 +59,6 @@
     {"name":"spr_turret_place","order":15,"path":"sprites/spr_turret_place/spr_turret_place.yy",},
     {"name":"spr_Button_Idle","order":5,"path":"sprites/spr_Button_Idle/spr_Button_Idle.yy",},
     {"name":"spr_Road","order":3,"path":"sprites/spr_Road/spr_Road.yy",},
+    {"name":"obj_CoinCount","order":16,"path":"objects/obj_CoinCount/obj_CoinCount.yy",},
   ],
 }

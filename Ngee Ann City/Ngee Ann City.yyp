@@ -46,6 +46,7 @@
     {"id":{"name":"obj_MainMenu_Select","path":"objects/obj_MainMenu_Select/obj_MainMenu_Select.yy",},},
     {"id":{"name":"fnt_Menu","path":"fonts/fnt_Menu/fnt_Menu.yy",},},
     {"id":{"name":"obj_obstruction","path":"objects/obj_obstruction/obj_obstruction.yy",},},
+    {"id":{"name":"obj_Score","path":"objects/obj_Score/obj_Score.yy",},},
     {"id":{"name":"spr_Title","path":"sprites/spr_Title/spr_Title.yy",},},
     {"id":{"name":"obj_Button_play","path":"objects/obj_Button_play/obj_Button_play.yy",},},
     {"id":{"name":"spr_IndustrialBlk","path":"sprites/spr_IndustrialBlk/spr_IndustrialBlk.yy",},},
@@ -81,6 +82,7 @@
     {"id":{"name":"spr_turret_place","path":"sprites/spr_turret_place/spr_turret_place.yy",},},
     {"id":{"name":"spr_Button_Idle","path":"sprites/spr_Button_Idle/spr_Button_Idle.yy",},},
     {"id":{"name":"spr_Road","path":"sprites/spr_Road/spr_Road.yy",},},
+    {"id":{"name":"obj_CoinCount","path":"objects/obj_CoinCount/obj_CoinCount.yy",},},
     {"id":{"name":"rm_Title","path":"rooms/rm_Title/rm_Title.yy",},},
   ],
   "RoomOrderNodes": [

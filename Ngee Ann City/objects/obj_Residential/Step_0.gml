@@ -4,7 +4,7 @@ var gridWidth = room_width div gridSquareWidth; // Calculate the number of cells
 var gridHeight = room_height div gridSquareHeight; // Calculate the number of cells in the y-direction
 var nonIndustry = 0;
 var adjacentIndustry = false;
-var rPoints = 0;
+rPoints = 0;
 
 
 
@@ -106,4 +106,4 @@ for (var i = 0; i < gridWidth; i++) {
   }
 }
 
-show_debug_message(rPoints)
+//show_debug_message(rPoints)
