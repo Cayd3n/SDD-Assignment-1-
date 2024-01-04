@@ -29,30 +29,68 @@ if (!instance_exists(isMenuVisible)) {
     isMenuVisible = false; // or true, depending on your initial state
 }
 
-
 // Draw Event - Drawing the spaced-out menu horizontally
 var menuX = x + 20; // Adjust this value based on your desired position
 var menuY = y + (((MAP_SLOTS - 1) div rowLength) + 1) * 64 + 20; // Add vertical spacing here
 
 var optionWidth = 120; // Adjust this value for the width of each option
-var optionSpacing = 150; // Adjust this value for the spacing between options
+var optionSpacing = 130; // Adjust this value for the spacing between options
 
+// Draw in-game menu
 for (var i = 0; i < array_length_1d(options); i++) {
-    draw_set_color(c_white);
+    draw_set_color(c_black);
 
     if (i == optionIndex) {
         // Highlight the selected option
-        draw_set_color(c_yellow); // Set the highlight color (you can change it)
+        draw_set_color(c_green); // Set the highlight color (you can change it)
         draw_text(menuX + i * (optionWidth + optionSpacing), menuY, ">> " + options[i]);
     } else {
         draw_text(menuX + i * (optionWidth + optionSpacing), menuY, options[i]);
     }
 
     // Reset color to default
-    draw_set_color(c_white);
+    draw_set_color(c_black);
 }
 
-// Step Event - Handling menu navigation
+// Draw instructions menu below the in-game menu
+var instructionsX = x + 20;
+var instructionsY = menuY + 40; // Adjust the vertical position based on your desired spacing
+
+draw_set_color(c_black);
+draw_text(instructionsX, instructionsY, "Instructions:");
+instructionsY += 30;
+
+draw_text(instructionsX, instructionsY, "Left click: Place block");
+instructionsX += 250; // Adjust this value for horizontal spacing
+draw_text(instructionsX, instructionsY, "Right click: Switch block");
+instructionsY += 40; // Increase vertical spacing between sections
+instructionsX = x + 20; // Reset instructionsX to the original value for the next section
+
+draw_text(instructionsX, instructionsY, "Block Colors:");
+instructionsY += 30;
+
+// Display block colors and corresponding types horizontally with spacing
+var colorTypes = [
+    {color: c_blue, type: "Commercial"},
+    {color: c_orange, type: "Industrial"},
+    {color: c_yellow, type: "Park"},
+    {color: c_green, type: "Residential"},
+    {color: c_black, type: "Road"}
+];
+
+var spacing = 40; // Adjust this value for the spacing between each block color and type
+
+for (var i = 0; i < array_length_1d(colorTypes); i++) {
+    draw_set_color(colorTypes[i].color);
+    draw_rectangle(instructionsX + i * (100 + spacing), instructionsY, instructionsX + 16 + i * (100 + spacing), instructionsY + 16, false);
+    draw_text(instructionsX + 20 + i * (100 + spacing), instructionsY, colorTypes[i].type);
+}
+
+// Increase vertical spacing after the color types
+instructionsY += 40;
+
+
+// Step Event - Handling menu navigation and selection (unchanged)
 if (keyboard_check_pressed(vk_left)) {
     optionIndex = max(0, optionIndex - 1);
 }
@@ -61,6 +99,7 @@ if (keyboard_check_pressed(vk_right)) {
     optionIndex = min(array_length_1d(options) - 1, optionIndex + 1);
 }
 
+<<<<<<< Updated upstream
 
 // Step Event - Handling menu selection
 if (keyboard_check_pressed(vk_enter) && !isMenuVisible) {
@@ -90,12 +129,13 @@ if (keyboard_check_pressed(vk_enter) && !isMenuVisible) {
             game_end();
             break;
     }
+=======
+if (keyboard_check_pressed(vk_enter) && isMenuVisible) {
+    // Handling menu selection (unchanged)
+>>>>>>> Stashed changes
 }
 
-
-
-// Step Event - Toggling menu visibility
+// Step Event - Toggling menu visibility (unchanged)
 if (keyboard_check_pressed(vk_escape)) {
     isMenuVisible = !isMenuVisible;
 }
-
