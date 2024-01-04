@@ -1,4 +1,4 @@
-var points = 0
+points = 0
 
 
 //Checks if the building types exist before retrieving the building type's collective score
@@ -27,4 +27,4 @@ if instance_exists(obj_Road)
 
 global.points = points; //Sets global points to the current score
 //show_debug_message(points) //Shows current points debug
-draw_text(988, 1440, string(points))
+
