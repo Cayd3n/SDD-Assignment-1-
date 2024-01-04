@@ -99,7 +99,6 @@ if (keyboard_check_pressed(vk_right)) {
     optionIndex = min(array_length_1d(options) - 1, optionIndex + 1);
 }
 
-<<<<<<< Updated upstream
 
 // Step Event - Handling menu selection
 if (keyboard_check_pressed(vk_enter) && !isMenuVisible) {
@@ -129,10 +128,11 @@ if (keyboard_check_pressed(vk_enter) && !isMenuVisible) {
             game_end();
             break;
     }
-=======
+}
+
 if (keyboard_check_pressed(vk_enter) && isMenuVisible) {
     // Handling menu selection (unchanged)
->>>>>>> Stashed changes
+
 }
 
 // Step Event - Toggling menu visibility (unchanged)
