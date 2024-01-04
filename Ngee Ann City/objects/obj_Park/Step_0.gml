@@ -41,6 +41,7 @@ var pPoints = 0;
 
 
 
+
 for (var i = 0; i < gridWidth; i++) {
     for (var j = 0; j < gridHeight; j++) {
         var obj = instance_position(i * gridSquareWidth, j * gridSquareHeight, obj_Park); // Check if the object at cell (i, j) is obj_Park
@@ -78,4 +79,4 @@ for (var i = 0; i < gridWidth; i++) {
 }
 //global.points += pPoints;
 //show_debug_message("Park Points: " + string(pPoints));
-
+show_debug_message("Coins: " + string(global.coins));

@@ -29,10 +29,10 @@ if (keyboard_check_pressed(vk_enter))
 		room_goto(rm_Game)
 	
 	}
-	else if(selection == 1)
+	else if(selection == 2)
 	{
 		room_goto(rm_Highscore)
-	}else if (selection == 2)
+	}else if (selection == 3)
 	{
 		game_end();
 	}
