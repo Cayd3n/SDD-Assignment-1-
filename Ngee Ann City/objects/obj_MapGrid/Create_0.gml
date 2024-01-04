@@ -7,7 +7,7 @@ mapgrid = array_create(MAP_SLOTS, -1);
 isMenuVisible = false; // or true, depending on your initial state
 
 optionIndex = 0; // Current selected option
-options = ["Start New Game", "Load Saved Game", "Save Game", "Display High Scores", "Exit Game"]; // Array of menu options
+options = ["Start New Game", "Save Game", "Display High Scores", "Exit Game"]; // Array of menu options
 
 
 

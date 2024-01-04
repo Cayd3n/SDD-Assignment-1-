@@ -116,23 +116,17 @@ if (keyboard_check_pressed(vk_enter) && !isMenuVisible) {
             break;
 
         case 1:
-            // Option 2: Load saved game
-            show_message("Loading saved game...");
-            remove_highlight_all(); //Remove current highlight
-			load_game(); //Load game function
-            break;
-        case 2:
             // Option 2: Save current game
-            show_message("Saving current game...");
+            show_message("Current game saved.");
 			save_game(); //Save game function
 			break;
-        case 3:
+        case 2:
             // Option 3: Display high scores
             show_message("Displaying high scores...");
             room_goto(rm_Highscore);
             break;
-		case 4:
-			// Option 4: Exit game
+        case 3:
+            // Option 4: Exit game
             show_message("Exiting the game...");
             game_end();
             break;

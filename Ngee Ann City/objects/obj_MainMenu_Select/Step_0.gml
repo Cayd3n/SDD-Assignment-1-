@@ -28,6 +28,10 @@ if (keyboard_check_pressed(vk_enter))
 	{
 		room_goto(rm_Game)
 	
+	}else if(selection == 1)
+	{
+		global.load_game = true; //Set global load game to true
+		room_goto(rm_Game) //Move to room game
 	}
 	else if(selection == 2)
 	{

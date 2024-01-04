@@ -10,5 +10,10 @@ else //If player name does not contain any characters
 	global.playername = "Guest"; //Player name is replaced by Guest
 }
 
+if(global.load_game == true) //If load game flag is true
+{
+	load_game(); //Load saved game function
+	global.load_game = false //Reinitialise load game flag to false
+}
 
 

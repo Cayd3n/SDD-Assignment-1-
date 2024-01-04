@@ -113,8 +113,7 @@ function load_game()
 {
 	//#macro LAYER_NAME "Buildings"
 	//layer_set_target_room(rm_Game);
-	//room_goto(rm_Game);
-	layer_create(0, "Buildings");
+	//layer_create(0, "Buildings");
 	if(file_exists("NgeeAnnCityGameInfo.txt"))
 	{
 		var load_file = file_text_open_read("NgeeAnnCityGameInfo.txt"); //Open txt file containing game information
