@@ -1,5 +1,7 @@
 var points = 0
 
+
+//Checks if the building types exist before retrieving the building type's collective score
 if instance_exists(obj_Residential)
 {
 	points += obj_Residential.rPoints;
@@ -22,10 +24,7 @@ if instance_exists(obj_Road)
 }
 
 
-//points += obj_Residential.rPoints;
-//points += obj_Commercial.commercialPoints;
-//points += obj_Industrial.industrialPoints;
-//points += obj_Park.pPoints; 
-//points += obj_Road.cRoads;
 
-show_debug_message(points)
+global.points = points; //Sets global points to the current score
+//show_debug_message(points) //Shows current points debug
+draw_text(988, 1440, string(points))
