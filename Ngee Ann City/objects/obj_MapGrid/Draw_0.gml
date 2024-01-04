@@ -119,6 +119,7 @@ if (keyboard_check_pressed(vk_enter) && !isMenuVisible) {
         case 2:
             // Option 3: Display high scores
             show_message("Displaying high scores...");
+			room_goto(rm_Highscore)
             // Add your code to display high scores here
             break;
 
