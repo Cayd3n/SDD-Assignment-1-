@@ -10,7 +10,9 @@ function scr_score_load(){
 	    var file = file_text_open_read("highscores.txt");
 	    while (!file_text_eof(file)) {
 	        var highscore = file_text_read_real(file);
-	        ds_list_add(highScores, highscore);
+			if (highscore != 0){
+				ds_list_add(highScores, highscore);
+			}
 	    }
 	    file_text_close(file);
 	}
@@ -20,38 +22,39 @@ function scr_score_load(){
 }
 
 function scr_score_save(){
-	/// scr_score_save
-	var highScores = argument0; // The list of high scores to be saved
-	var currentScore = argument1; // The current score to be saved
+    var highScores = argument0; // The list of high scores to be saved
+    var currentScore = argument1; // The current score to be saved
 
-	// Add the current score to the list
-	ds_list_add(highScores, currentScore);
+    if (currentScore > 0) {
+        // Add the current score to the list
+        ds_list_add(highScores, currentScore);
 
-	// Sort the list in descending order
-	ds_list_sort(highScores, false);
+        // Sort the list in descending order
+        ds_list_sort(highScores, false);
 
-	// Remove duplicate scores
-	var i = 0;
-	while (i < ds_list_size(highScores) - 1) {
-	    if (ds_list_find_value(highScores, i) == ds_list_find_value(highScores, i + 1)) {
-	        ds_list_delete(highScores, i + 1);
-	    } else {
-	        i++;
-	    }
-	}
+        // Remove duplicate scores
+        var i = 0;
+        while (i < ds_list_size(highScores) - 1) {
+            if (ds_list_find_value(highScores, i) == ds_list_find_value(highScores, i + 1)) {
+                ds_list_delete(highScores, i + 1);
+            } else {
+                i++;
+            }
+        }
 
-	// If the list has more than 10 scores, remove the lowest scores
-	while (ds_list_size(highScores) > 10) {
-	    ds_list_delete(highScores, 10);
-	}
+        // If the list has more than 10 scores, remove the lowest scores
+        while (ds_list_size(highScores) > 5) {
+            ds_list_delete(highScores, 5);
+        }
 
-	// Save the high scores to a file
-	var file = file_text_open_write("highscores.txt");
-	for (var j = 0; j < ds_list_size(highScores); j++) {
-	    file_text_write_real(file, ds_list_find_value(highScores, j));
-	    file_text_writeln(file);
-	}
-	file_text_close(file);
+        // Save the high scores to a file
+        var file = file_text_open_write("highscores.txt");
+        for (var j = 0; j < ds_list_size(highScores); j++) {
+            file_text_write_real(file, ds_list_find_value(highScores, j));
+            file_text_writeln(file);
+        }
+        file_text_close(file);
+    }
 }
 
 

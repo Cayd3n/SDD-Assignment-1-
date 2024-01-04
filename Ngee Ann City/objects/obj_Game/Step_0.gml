@@ -12,28 +12,15 @@
 
 if (global.coins == 0)
 {
-	var highScores = ds_list_create();
+	var highScores = scr_score_load();
 
 	//// Add existing high scores to the list (assuming you have them stored somewhere)
 	//// For example:
-	ds_list_add(highScores, 50);
-	ds_list_add(highScores, 40);
-	ds_list_add(highScores, 30);
-	ds_list_add(highScores, 50);
-	ds_list_add(highScores, 40);
-	ds_list_add(highScores, 30);
-	ds_list_add(highScores, 50);
-	ds_list_add(highScores, 40);
-	ds_list_add(highScores, 30);
-	ds_list_add(highScores, 40);
-	ds_list_add(highScores, 30);
-	ds_list_add(highScores, 50);
-	ds_list_add(highScores, 40);
-	ds_list_add(highScores, 30);
+
 	//// ... Add more high scores as needed
 
 	//// Add a new high score
-	var newScore = 10;  // need to change this newScore is total score at the end
+	var newScore = obj_Score.points;  // need to change this newScore is total score at the end
 	scr_score_save(highScores, newScore);
 	room_goto(rm_Highscore);
 	

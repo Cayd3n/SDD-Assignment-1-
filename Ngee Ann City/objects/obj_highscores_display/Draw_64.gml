@@ -13,7 +13,13 @@ for (var i = 0; i < ds_list_size(highScores); i++) {
     draw_text(room_width / 2, yPos + i * lineHeight, scoreText);
 }
 
-draw_text(room_width / 2, yPos + ds_list_size(highScores) * lineHeight + 20, "Press Z to go back to Main Menu");
+if (variable_global_exists("points")) {
+    draw_text(room_width / 2, yPos + ds_list_size(highScores) * lineHeight + 10, "Your Score: " + string(global.points));
+}
+
+
+
+draw_text(room_width / 2, yPos + ds_list_size(highScores) * lineHeight + 30, "Press Z to go back to Main Menu");
 
 
 // Display the loaded high scores in the output window

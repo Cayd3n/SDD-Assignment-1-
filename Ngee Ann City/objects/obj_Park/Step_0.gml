@@ -79,4 +79,4 @@ for (var i = 0; i < gridWidth; i++) {
 }
 //global.points += pPoints;
 //show_debug_message("Park Points: " + string(pPoints));
-show_debug_message("Coins: " + string(global.coins));
+//show_debug_message("Coins: " + string(global.coins));
