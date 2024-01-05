@@ -23,7 +23,9 @@ for (var i = 0; i < top; i++) {
 }
 
 var instructionY = startY + top * lineHeight + 20;  // Adjust the '20' as needed
-draw_text(room_width / 2, instructionY, "Your score:"  + string(global.points));
+if (variable_global_exists("points")) {
+	draw_text(room_width / 2, instructionY, "Your score:"  + string(global.points));
+}
 draw_text(room_width / 2, instructionY + 30, "Press Z to go back to Main Menu");
 
 //draw_set_halign(fa_center);
