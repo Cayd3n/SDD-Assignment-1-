@@ -70,8 +70,30 @@ for (var i = 0; i < gridWidth; i++) {
 			   rPoints += adjacentResidences; // Accumulate points for all residential objects
 		  
 			
+			 var adjacentCommercial = 0;
+		
 
+            // Check for adjacent commercial
+            if (position_meeting(checkx + gridSquareWidth, checky, obj_Commercial)) {
+                adjacentCommercial += 1;
+            }
+            if (position_meeting(checkx - gridSquareWidth, checky, obj_Commercial)) {
+                adjacentCommercial += 1;
+            }
+            if (position_meeting(checkx, checky + gridSquareHeight, obj_Commercial)) {
+                adjacentCommercial += 1;
+            }
+            if (position_meeting(checkx, checky - gridSquareHeight, obj_Commercial)) {
+                adjacentCommercial += 1;
+            }
+
+			 rPoints += adjacentCommercial; // Accumulate points for all residential objects
         }
+		
+            
+          
+		  
+		
 		
 		var obj = instance_position(i * gridSquareWidth, j * gridSquareHeight, obj_Residential); // Check if the object at cell (i, j) is obj_Park
         if (obj != noone) 
@@ -102,9 +124,8 @@ for (var i = 0; i < gridWidth; i++) {
 			
 		
 		
-		
+		}		
 		}
     }
   }  
-}
 
