@@ -1,6 +1,8 @@
 global.coins = 16
 global.points = 0
 global.gamerounds = 0
+global.savecoinplayer = false //Initlaise boolean flag for save coin
+
 if(string_length(global.initialiseplayername) > 0) //Checks if the player name is more than 1 character
 {
 	global.playername = global.initialiseplayername //Player name is replaced by inputs from player

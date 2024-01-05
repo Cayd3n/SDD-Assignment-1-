@@ -111,9 +111,7 @@ function save_game()
 
 function load_game()
 {
-	//#macro LAYER_NAME "Buildings"
-	//layer_set_target_room(rm_Game);
-	//layer_create(0, "Buildings");
+	global.savecoinplayer = true; //Initialise global boolean of save coin flag
 	if(file_exists("NgeeAnnCityGameInfo.txt"))
 	{
 		var load_file = file_text_open_read("NgeeAnnCityGameInfo.txt"); //Open txt file containing game information
@@ -125,7 +123,7 @@ function load_game()
 		{
 			var struct_load = load_array[i];
 			global.playername = struct_load.gameplayername;
-			global.coins = struct_load.gamecoins;
+			global.savecoins = struct_load.gamecoins;
 			global.points = struct_load.gamepoints;
 			global.gamerounds = struct_load.gamerounds;
 			//show_debug_message(string(global.coins) + string(global.points) + string(global.gamerounds))

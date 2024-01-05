@@ -23,6 +23,15 @@ if instance_exists(obj_building_place)
 
 //show_debug_message(16 + generated_coins - spent_coins)
 
-//Uses the starting number of coins added with the number of generated coins minus the spent coins to achieve
-//a correct coin count, without overinflating.
-global.coins = 16 + generated_coins - spent_coins; 
+
+if(global.savecoinplayer == true) //If boolean flag for save coin is true
+{
+	global.coins = global.savecoins; //Coins take the value of save coins
+}
+else
+{
+	//Uses the starting number of coins added with the number of generated coins minus the spent coins to achieve
+	//a correct coin count, without overinflating.
+	global.coins = 16 + generated_coins - spent_coins; 
+}
+
