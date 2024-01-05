@@ -27,6 +27,9 @@ if instance_exists(obj_building_place)
 if(global.savecoinplayer == true) //If boolean flag for save coin is true
 {
 	global.coins = global.savecoins; //Coins take the value of save coins
+	//Uses the starting number of coins added with the number of generated coins minus the spent coins to achieve
+	//a correct coin count, without overinflating.
+	global.coins = global.savecoins + generated_coins - spent_coins; 
 }
 else
 {
